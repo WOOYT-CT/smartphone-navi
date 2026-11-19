@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スマホやさしくナビ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+
+        <div class="header-top">
+            <div class="site-logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="スマホやさしくナビ" class="logo-image">
+                </a>
+            </div>
+        
+        <div class="font-controls">
+            <span>文字サイズ変更</span>
+            <button type="button" data-size="small">小</button>
+            <button type="button" data-size="medium">中</button>
+            <button type="button" data-size="large">大</button>
+        </div>
+
+    </div>
+
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link active" aria-current="page">
+                <span class="nav-icon" aria-hidden="true"><img src="images/icons/home.svg" alt=""></span>
+                <span>ホーム</span>
+            </a>
+            <a href="basic.html" class="nav-link">
+                <span class="nav-icon" aria-hidden="true"><img src="images/icons/smartphone.svg" alt=""></span>
+                <span>基本操作</span>
+            </a>
+            <a href="line.html" class="nav-link">
+                <span class="nav-icon" aria-hidden="true"><img src="images/icons/message.svg" alt=""></span>
+                <span>LINE</span>
+            </a>
+            <a href="internet.html" class="nav-link">
+                <span class="nav-icon" aria-hidden="true"><img src="images/icons/globe.svg" alt=""></span>
+                <span>ネット</span>
+            </a>
+            <a href="safety.html" class="nav-link">
+                <span class="nav-icon" aria-hidden="true"><img src="images/icons/shield.svg" alt=""></span>
+                <span>安全対策</span>
+            </a>
+        </nav>   
+    </header>
+
+    <main>
+
+        
+<!-- トップページのメインビジュアル -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            はじめてのスマホ学習
+        </span>
+
+        <h1>スマホを、<br>
+    もっとかんたんに。</h1>
+
+        <p class="hero-description">
+            写真を見ながら、自分のペースで
+            スマホの使い方を学べます。
+        </p>
+
+        <a href="basic.html" class="hero-button">
+            学習をはじめる →
+        </a>
+
+        <p class="hero-note">
+            ※ このサイトでは、iPhoneの操作方法を紹介します。
+        </p>
+
+    </div>
+
+    <!-- スマホ学習のイラスト -->
+<div class="hero-image">
+    <img
+        src="images/hero-illust.png"
+        alt="スマートフォンの使い方を楽しく学ぶイラスト"
+        class="hero-illustration"
+    >
+</div>
+
+</section>
+
+
+        <!-- 学習カテゴリ -->
+        <section class="categories">
+            <h2>何を知りたいですか？</h2>
+            <p class="section-description">
+                学びたい内容を選んでください。
+            </p>
+
+            
+<div class="cards">
+
+    <!-- スマホの基本操作 -->
+    <a href="basic.html" class="card">
+        <div class="card-top">
+            <span class="card-icon" aria-hidden="true"><img src="images/icons/smartphone.svg" alt=""></span>
+            <span class="card-number" aria-hidden="true">01</span>
+        </div>
+
+        <div class="card-text">
+            <h3>スマホの基本操作</h3>
+            <p>文字サイズ・Wi-Fi・音量調整</p>
+        </div>
+
+        <span class="card-button">学習する →</span>
+    </a>
+
+    <!-- LINEの使い方 -->
+    <a href="line.html" class="card">
+        <div class="card-top">
+            <span class="card-icon" aria-hidden="true"><img src="images/icons/message.svg" alt=""></span>
+            <span class="card-number" aria-hidden="true">02</span>
+        </div>
+
+        <div class="card-text">
+            <h3>LINEの使い方</h3>
+            <p>友だち追加・メッセージ・写真・スタンプ</p>
+        </div>
+
+        <span class="card-button">学習する →</span>
+    </a>
+
+    <!-- インターネットの使い方 -->
+    <a href="internet.html" class="card">
+        <div class="card-top">
+            <span class="card-icon" aria-hidden="true"><img src="images/icons/globe.svg" alt=""></span>
+            <span class="card-number" aria-hidden="true">03</span>
+        </div>
+
+        <div class="card-text">
+            <h3>インターネットの使い方</h3>
+            <p>検索・Webサイト・タブ操作</p>
+        </div>
+
+        <span class="card-button">学習する →</span>
+    </a>
+
+    <!-- スマホの安全対策 -->
+    <a href="safety.html" class="card">
+        <div class="card-top">
+            <span class="card-icon" aria-hidden="true"><img src="images/icons/shield.svg" alt=""></span>
+            <span class="card-number" aria-hidden="true">04</span>
+        </div>
+
+        <div class="card-text">
+            <h3>スマホを安全に使う</h3>
+            <p>怪しいメール・個人情報・詐欺対策</p>
+        </div>
+
+        <span class="card-button">学習する →</span>
+    </a>
+
+</div>
+           
+        </section>
+
+        
+<!-- このサイトの特徴 -->
+<section class="about">
+
+    <h2>このサイトの特徴</h2>
+
+    <p class="section-description">
+        はじめての方でも、安心して学べる工夫があります。
+    </p>
+
+    <div class="feature-cards">
+
+        <!-- 写真でわかる -->
+        <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true"><img src="images/icons/photo.svg" alt=""></span>
+            <h3>写真でわかる</h3>
+            <p>
+                実際の画面を見ながら、
+                操作方法を確認できます。
+            </p>
+        </div>
+
+        <!-- 一歩ずつ学べる -->
+        <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true"><img src="images/icons/book.svg" alt=""></span>
+            <h3>一歩ずつ学べる</h3>
+            <p>
+                手順にそって、自分のペースで
+                練習できます。
+            </p>
+        </div>
+
+        <!-- 文字サイズを変更できる -->
+        <div class="feature-card">
+            <span class="feature-icon" aria-hidden="true"><img src="images/icons/font-size.svg" alt=""></span>
+            <h3>文字を大きくできる</h3>
+            <p>
+                読みやすい文字サイズに
+                変更できます。
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+    
+    
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-main">
+
+            <!-- サイト紹介 -->
+            <div class="footer-about">
+                <!-- フッターのロゴ -->
+<img src="images/logo.png"
+     alt="スマホやさしくナビ"
+     class="footer-logo">
+                <p>スマホの使い方を、やさしく、わかりやすく。</p>
+                <p>自分のペースで、少しずつ学んでいきましょう。</p>
+            </div>
+
+            <!-- ページ案内 -->
+            <div class="footer-nav">
+                <h2>ページ案内</h2>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="basic.html">基本操作</a></li>
+                    <li><a href="line.html">LINEの使い方</a></li>
+                    <li><a href="internet.html">インターネット</a></li>
+                    <li><a href="safety.html">安全対策</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- ご利用にあたっての注意事項 -->
+        <p class="footer-note">
+            ※ スマートフォンの機種やバージョンによって、
+            画面や操作方法が異なる場合があります。
+        </p>
+
+        <!-- コピーライト -->
+        <div class="footer-bottom">
+            <p>© 2026 スマホやさしくナビ</p>
+            <p>はじめての方にも、安心して学べるサイト</p>
+        </div>
+
+    </div>
+</footer>
+<!-- ページトップへ戻るボタン -->
+<button id="back-to-top" type="button" aria-label="ページの先頭へ戻る">
+    <span aria-hidden="true">↑</span>
+    <span class="back-to-top-text">TOP</span>
+</button>
+</body>
+</html>

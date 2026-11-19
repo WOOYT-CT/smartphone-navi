@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スマホの基本操作｜スマホやさしくナビ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+
+        <div class="header-top">
+            <div class="site-logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="スマホやさしくナビ" class="logo-image">
+                </a>
+            </div>
+        
+        <div class="font-controls">
+            <span>文字サイズ変更</span>
+            <button type="button" data-size="small">小</button>
+            <button type="button" data-size="medium">中</button>
+            <button type="button" data-size="large">大</button>
+        </div>
+
+    </div>
+
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">
+                <span class="nav-icon" aria-hidden="true"><img src="images/icons/home.svg" alt=""></span>
+                <span>ホーム</span>
+            </a>
+            <a href="basic.html" class="nav-link active" aria-current="page">
+                <span class="nav-icon" aria-hidden="true"><img src="images/icons/smartphone.svg" alt=""></span>
+                <span>基本操作</span>
+            </a>
+            <a href="line.html" class="nav-link">
+                <span class="nav-icon" aria-hidden="true"><img src="images/icons/message.svg" alt=""></span>
+                <span>LINE</span>
+            </a>
+            <a href="internet.html" class="nav-link">
+                <span class="nav-icon" aria-hidden="true"><img src="images/icons/globe.svg" alt=""></span>
+                <span>ネット</span>
+            </a>
+            <a href="safety.html" class="nav-link">
+                <span class="nav-icon" aria-hidden="true"><img src="images/icons/shield.svg" alt=""></span>
+                <span>安全対策</span>
+            </a>
+        </nav>   
+    </header>
+
+<!-- メインコンテンツ -->
+<main class="basic-main">
+
+<!-- ページタイトル -->
+<section class="basic-intro">
+    <h1>スマホの基本操作</h1>
+    <p>
+        スマートフォンの基本的な使い方を、わかりやすく紹介します。
+    </p>
+    </section>
+<!-- 学習メニュー -->
+<section class="basic-lessons">
+    <h2>学習メニュー</h2>
+    <div class="lesson-list">
+        <a href="#font-size" class="lesson-item active">
+            🔠文字サイズの変更
+        </a>
+        <a href="#wifi" class="lesson-item">
+            📶Wi-Fiの接続
+        </a>
+        <a href="#volume" class="lesson-item">
+            🔊音量の調整
+        </a>
+    </div>
+</section>
+
+<!-- 文字サイズの変更 -->
+ <section id="font-size" class="lesson-section">
+    <h2>文字サイズの変更</h2>
+    <p>iPhoneの文字が小さくて読みにくいときは、
+        設定から文字を大きくできます。</p>
+
+    <div class="step-list">
+    <!-- 手順1 -->
+        <div class="step-item">
+           <div class="step-content">
+            <!-- 設定アプリのアイコン -->
+            <img loading="lazy" src="images/font-step1.jpg" alt="設定アプリのアイコン" class="step-icon">
+
+            <!-- 操作の説明 -->
+             <div class="step-text">
+                <h3 class="step-title">
+    <span class="step-number">手順 1</span>
+    <span>設定を開く</span>
+</h3>
+                <p>
+                    ホーム画面にある「設定」アプリをタップします。
+                </p>
+             </div>
+           </div>
+        </div>
+    <!-- 手順2 -->
+        <div class="step-item">
+            <div class="step-content">
+                <!-- 画面表示と明るさの操作画像 -->
+                <img loading="lazy" src="images/font-step2.jpg" alt="画面表示と明るさの設定項目" class="step-guide-image">
+
+                <div class="step-text">
+                <h3 class="step-title">
+    <span class="step-number">手順 2</span>
+    <span>画面表示と明るさ</span>
+</h3>
+                <p>
+                設定画面にある「画面表示と明るさ」をタップします。
+                </p>
+                </div>
+            </div>
+        </div>
+    <!-- 手順3 -->
+        <div class="step-item">
+            <div class="step-content">
+                <!-- テキストサイズの設定画像 -->
+                <img loading="lazy" src="images/font-step3.jpg" alt="テキストサイズを変更" class="step-guide-image">
+                <!-- 操作の説明 -->
+                <div class="step-text">
+                    <h3 class="step-title">
+    <span class="step-number">手順 3</span>
+    <span>テキストサイズを選ぶ</span>
+</h3>
+                    <p>
+                    「テキストサイズを変更」をタップします。
+                    </p>
+                </div>
+            </div>
+        </div>
+    <!-- 手順4 -->
+        <div class="step-item">
+        <div class="step-content">
+            <!-- 文字サイズ調整の画像 -->
+            <img loading="lazy" src="images/font-step4.jpg" alt="文字サイズを調整するスライダー" class="step-guide-image">
+            <!-- 操作の説明 -->
+             <div class="step-text">
+                <h3 class="step-title">
+    <span class="step-number">手順 4</span>
+    <span>文字を大きくする</span>
+</h3>
+                <p>画面の下にあるスライダーを右に動かすと、文字が大きくなります。</p>
+             </div>
+        </div>
+    </div>
+    </div>
+ </section>
+
+ <!-- Wi-Fiの接続 -->
+<section id="wifi" class="lesson-section">
+    <h2>Wi-Fiの接続</h2>
+    <p>iPhoneをWi-Fiに接続する方法を紹介します。</p>
+    <div class="step-list">
+        <!-- 手順1 -->
+         <div class="step-item">
+            <div class="step-content">
+                <img loading="lazy" src="images/font-step1.jpg" alt="設定アプリのアイコン" class="step-icon">
+                <div class="step-text">
+
+                    <h3 class="step-title">
+    <span class="step-number">手順 1</span>
+    <span>設定を開く</span>
+</h3>
+                    <p>ホーム画面にある「設定」アプリをタップします。</p>
+                </div>
+            </div>
+         </div>
+
+        
+<!-- 手順2 -->
+<div class="step-item">
+    <div class="step-content">
+
+        <img loading="lazy" src="images/wifi-menu.jpeg"
+             alt="Wi-Fiの設定項目"
+             class="step-guide-image">
+
+        <div class="step-text">
+            <h3 class="step-title">
+    <span class="step-number">手順 2</span>
+    <span>Wi-Fiを選ぶ</span>
+</h3>
+            <p>設定画面にある「Wi-Fi」をタップします。</p>
+        </div>
+
+    </div>
+</div>
+<!-- 手順3 -->
+<div class="step-item">
+    <div class="step-content">
+
+        <img loading="lazy" src="images/wifi-on.jpeg"
+             alt="Wi-Fiをオンにする画面"
+             class="step-guide-image">
+
+        <div class="step-text">
+            <h3 class="step-title">
+    <span class="step-number">手順 3</span>
+    <span>Wi-Fiをオンにする</span>
+</h3>
+            <p>「Wi-Fi」のスイッチをタップして、
+               オン（緑色）にします。</p>
+        </div>
+
+    </div>
+</div>
+<!-- 手順4 -->
+<div class="step-item">
+    <div class="step-content">
+
+        <img loading="lazy" src="images/wifi-password.jpeg"
+             alt="Wi-Fiのパスワード入力画面"
+             class="step-guide-image">
+
+        <div class="step-text">
+            <h3 class="step-title">
+    <span class="step-number">手順 4</span>
+    <span>パスワードを入力する</span>
+</h3>
+            <p>接続したいネットワークを選び、
+               パスワードを入力して「接続」をタップします。</p>
+        </div>
+
+    </div>
+</div>
+    </div>
+</section>
+
+  <!-- 音量の調整 -->
+   <section id="volume" class="lesson-section">
+    <h2>音量の調整</h2>
+    <p>スマートフォンの音量を調整する方法を紹介します。</p>
+    
+<div class="step-list">
+
+    <!-- 手順1 -->
+    <div class="step-item">
+        <div class="step-content">
+
+            <img loading="lazy" src="images/volume-button.jpeg"
+                 alt="iPhoneの音量ボタン"
+                 class="step-guide-image">
+
+            <div class="step-text">
+                <h3 class="step-title">
+    <span class="step-number">手順 1</span>
+    <span>音量ボタンを確認する</span>
+</h3>
+
+                <p>iPhoneの側面にある音量ボタンを確認します。</p>
+            </div>
+
+        </div>
+    </div>
+
+<!-- 手順2 -->
+<div class="step-item">
+    <div class="step-content">
+
+        <img loading="lazy" src="images/volume-up.jpeg"
+             alt="音量を大きくするボタン"
+             class="step-guide-image">
+
+        <div class="step-text">
+            <h3 class="step-title">
+    <span class="step-number">手順 2</span>
+    <span>音量を大きくする</span>
+</h3>
+            <p>iPhoneの側面にある上の音量ボタンを押すと、
+               音量が大きくなります。</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- 手順3 -->
+<div class="step-item">
+    <div class="step-content">
+
+        <img loading="lazy" src="images/volume-down.jpeg"
+             alt="音量を小さくするボタン"
+             class="step-guide-image">
+
+        <div class="step-text">
+            <h3 class="step-title">
+    <span class="step-number">手順 3</span>
+    <span>音量を小さくする</span>
+</h3>
+            <p>iPhoneの側面にある下の音量ボタンを押すと、
+               音量が小さくなります。</p>
+        </div>
+
+    </div>
+</div>
+<!-- 手順4 -->
+<div class="step-item">
+<div class="step-content">
+    <img loading="lazy" src="images/volume-settings.jpeg" alt="サウンドと触覚の設定画面" class="step-guide-image">
+    <div class="step-text">
+
+        <h3 class="step-title">
+    <span class="step-number">手順 4</span>
+    <span>設定から音量を調整する</span>
+</h3>
+        <p>「設定」から「サウンドと触覚」を開き、「着信音と通知音」のスライダーを動かします。</p>
+    </div>
+</div>
+</div>
+</div>
+
+   </section>
+    </main>
+
+    <!-- フッター -->
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-main">
+
+            <!-- サイト紹介 -->
+            <div class="footer-about">
+                <!-- フッターのロゴ -->
+<img src="images/logo.png"
+     alt="スマホやさしくナビ"
+     class="footer-logo">
+                <p>スマホの使い方を、やさしく、わかりやすく。</p>
+                <p>自分のペースで、少しずつ学んでいきましょう。</p>
+            </div>
+
+            <!-- ページ案内 -->
+            <div class="footer-nav">
+                <h2>ページ案内</h2>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="basic.html">基本操作</a></li>
+                    <li><a href="line.html">LINEの使い方</a></li>
+                    <li><a href="internet.html">インターネット</a></li>
+                    <li><a href="safety.html">安全対策</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- ご利用にあたっての注意事項 -->
+        <p class="footer-note">
+            ※ スマートフォンの機種やバージョンによって、
+            画面や操作方法が異なる場合があります。
+        </p>
+
+        <!-- コピーライト -->
+        <div class="footer-bottom">
+            <p>© 2026 スマホやさしくナビ</p>
+            <p>はじめての方にも、安心して学べるサイト</p>
+        </div>
+
+    </div>
+</footer>
+<!-- ページトップへ戻るボタン -->
+<button id="back-to-top" type="button" aria-label="ページの先頭へ戻る">
+    <span aria-hidden="true">↑</span>
+    <span class="back-to-top-text">TOP</span>
+</button>
+</body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安全対策｜スマホやさしくナビ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+
+        <div class="header-top">
+            <div class="site-logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="スマホやさしくナビ" class="logo-image">
+                </a>
+            </div>
+        
+        <div class="font-controls">
+            <span>文字サイズ変更</span>
+            <button type="button" data-size="small">小</button>
+            <button type="button" data-size="medium">中</button>
+            <button type="button" data-size="large">大</button>
+        </div>
+
+    </div>
+
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link">
+                <span class="nav-icon" aria-hidden="true"><img src="images/icons/home.svg" alt=""></span>
+                <span>ホーム</span>
+            </a>
+            <a href="basic.html" class="nav-link">
+                <span class="nav-icon" aria-hidden="true"><img src="images/icons/smartphone.svg" alt=""></span>
+                <span>基本操作</span>
+            </a>
+            <a href="line.html" class="nav-link">
+                <span class="nav-icon" aria-hidden="true"><img src="images/icons/message.svg" alt=""></span>
+                <span>LINE</span>
+            </a>
+            <a href="internet.html" class="nav-link">
+                <span class="nav-icon" aria-hidden="true"><img src="images/icons/globe.svg" alt=""></span>
+                <span>ネット</span>
+            </a>
+            <a href="safety.html" class="nav-link active" aria-current="page">
+                <span class="nav-icon" aria-hidden="true"><img src="images/icons/shield.svg" alt=""></span>
+                <span>安全対策</span>
+            </a>
+        </nav>   
+    </header>
+
+<!-- メインコンテンツ -->
+<main class="basic-main">
+
+
+<!-- ページタイトル -->
+<section class="basic-intro">
+    <h1>スマホの安全対策</h1>
+    <p>
+        スマートフォンを安心して使うために、
+        詐欺や個人情報のトラブルから
+        身を守る方法を紹介します。
+    </p>
+</section>
+
+
+
+<!-- 学習メニュー -->
+<section class="basic-lessons">
+    <h2>学習メニュー</h2>
+
+    <div class="lesson-list">
+        <a href="#fraud" class="lesson-item active">
+            📞 詐欺に注意する
+        </a>
+
+        <a href="#password" class="lesson-item">
+            🔒 パスワードを守る
+        </a>
+
+        <a href="#trouble" class="lesson-item">
+            🛡️ 困ったときの対処法
+        </a>
+    </div>
+</section>
+
+
+
+
+
+<!-- 詐欺に注意する -->
+<section id="fraud" class="lesson-section">
+    <h2>詐欺に注意する</h2>
+    <p>
+        スマートフォンや電話を使った詐欺から
+        身を守る方法を学びましょう。
+    </p>
+
+    <!-- オレオレ詐欺の動画 -->
+    <div class="safety-video">
+        <h3>① オレオレ詐欺（電話の詐欺）</h3>
+        <p>
+            家族になりすましてお金をだまし取る
+            詐欺の手口を、動画で確認しましょう。
+        </p>
+
+        <video controls playsinline preload="metadata">
+            <source src="video/oreore-sagi.mp4"
+                    type="video/mp4">
+            <track kind="captions" src="video/oreore-sagi-ja.vtt" srclang="ja" label="日本語">
+            お使いのブラウザは動画に対応していません。
+        </video>
+    </div>
+
+
+
+
+
+<!-- オレオレ詐欺を防ぐポイント -->
+<div class="fraud-tips">
+    <h3>🛡️ オレオレ詐欺を防ぐポイント</h3>
+
+    <div class="fraud-tip">
+        <span class="fraud-tip-icon">💸</span>
+        <div>
+            <h4>あわててお金を送らない</h4>
+            <p>「すぐにお金が必要」と言われても、あわてて送金しないようにしましょう。</p>
+        </div>
+    </div>
+
+    <div class="fraud-tip">
+        <span class="fraud-tip-icon">📞</span>
+        <div>
+            <h4>家族に確認する</h4>
+            <p>家族を名乗る電話があったときは、いつも使っている電話番号にかけ直して確認しましょう。</p>
+        </div>
+    </div>
+
+    <div class="fraud-tip">
+        <span class="fraud-tip-icon">👥</span>
+        <div>
+            <h4>一人で判断しない</h4>
+            <p>少しでも不安に感じたら、家族や信頼できる人に相談しましょう。</p>
+        </div>
+    </div>
+</div>
+
+
+    <!-- フィッシング詐欺 -->
+<h3 class="safety-subtitle">② フィッシング詐欺（偽のSMS）</h3>
+    <!-- 怪しいSMSの例 -->
+<div class="safety-sms">
+    <p>
+        宅配業者などを装った偽のメッセージが
+        届くことがあります。
+        次の例を見てみましょう。
+    </p>
+
+    <!-- SMSの見本 -->
+    <div class="sms-example">
+        <p class="sms-sender">差出人：知らない番号</p>
+
+        <div class="sms-message">
+            <p>
+                お荷物をお届けしましたが、
+                ご不在のため持ち帰りました。
+                下記のリンクから再配達の手続きを
+                してください。
+            </p>
+            <p class="sms-fake-link">
+                https://example.invalid/retry
+            </p>
+        </div>
+
+        <p class="sms-note">※ 学習用の架空のメッセージです。</p>
+    </div>
+
+    <!-- 注意するポイント -->
+    <div class="sms-warning">
+        <h3>⚠️ 注意するポイント</h3>
+        <p>
+            SMSに書かれたリンクをすぐに開かず、
+            配送会社の公式アプリや公式サイトから
+            確認しましょう。
+        </p>
+    </div>
+</div>
+</section>
+
+
+
+<!-- パスワードを守る -->
+<section id="password" class="lesson-section">
+    <h2>パスワードを守る</h2>
+    <p>
+        大切な個人情報を守るために、
+        パスワードの安全な使い方を学びましょう。
+    </p>
+
+    <!-- パスワードを守る3つのポイント -->
+    <div class="password-tips">
+        <h3>🔒 パスワードを守る3つのポイント</h3>
+
+        <div class="password-tip">
+            <span class="password-tip-icon">🙊</span>
+            <div>
+                <h4>パスワードを人に教えない</h4>
+                <p>
+                    家族や友人でも、むやみに教えないようにしましょう。
+                </p>
+            </div>
+        </div>
+
+        <div class="password-tip">
+            <span class="password-tip-icon">🔄</span>
+            <div>
+                <h4>同じパスワードを使い回さない</h4>
+                <p>
+                    サービスごとに違うパスワードを使いましょう。
+                </p>
+            </div>
+        </div>
+
+        <div class="password-tip">
+            <span class="password-tip-icon">🔑</span>
+            <div>
+                <h4>長くて安全なパスワードを使う</h4>
+                <p>
+                    できるだけ長いパスワードを設定し、
+        名前や誕生日など、推測されやすい言葉は避けましょう。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- パスワードの比較 -->
+    <div class="password-example">
+        <h3>パスワードの例</h3>
+
+        <div class="password-compare">
+            <div class="password-bad">
+                <h4>❌ 危険な例</h4>
+                <p class="password-sample">12345678</p>
+                <p>簡単で推測されやすい</p>
+            </div>
+
+            <div class="password-good">
+                <h4>✅ 安全な考え方</h4>
+                <p class="password-sample">長く・別々に</p>
+                <p>長いパスワードを使い回さない</p>
+            </div>
+        </div>
+
+        <p class="password-note">
+            ※ 実際のパスワードには、
+            この例をそのまま使用しないでください。
+        </p>
+    </div>
+</section>
+
+
+
+
+
+<!-- 困ったときの対処法 -->
+<section id="trouble" class="lesson-section">
+    <h2>困ったときの対処法</h2>
+    <p>
+        怪しい電話やメッセージが届いたときは、
+        あわてずに行動しましょう。
+    </p>
+
+    <!-- 困ったときの3つの行動 -->
+    <div class="trouble-tips">
+        <h3>🛡️ 困ったときの3つの行動</h3>
+
+        <div class="trouble-tip">
+            <span class="trouble-tip-icon">📞</span>
+            <div>
+                <h4>電話を切る</h4>
+                <p>
+                    お金や個人情報を求められたら、
+                    いったん電話を切りましょう。
+                </p>
+            </div>
+        </div>
+
+        <div class="trouble-tip">
+            <span class="trouble-tip-icon">🔗</span>
+            <div>
+                <h4>怪しいリンクを開かない</h4>
+                <p>
+                    SMSのリンクから個人情報を
+                    入力しないようにしましょう。
+                </p>
+            </div>
+        </div>
+
+        <div class="trouble-tip">
+            <span class="trouble-tip-icon">👥</span>
+            <div>
+                <h4>一人で悩まず相談する</h4>
+                <p>
+                    家族や信頼できる人に相談しましょう。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 相談窓口 -->
+    <div class="trouble-contacts">
+        <h3>困ったときの相談窓口</h3>
+
+        <div class="contact-item">
+            <div class="contact-info">
+                <h4>消費者ホットライン</h4>
+                <p>契約や悪質な勧誘などの相談</p>
+            </div>
+            <span class="contact-number">188</span>
+        </div>
+
+        <div class="contact-item">
+            <div class="contact-info">
+                <h4>警察相談専用電話</h4>
+                <p>詐欺の疑いなどの相談</p>
+            </div>
+            <span class="contact-number">#9110</span>
+        </div>
+
+        <div class="contact-item">
+            <div class="contact-info">
+                <h4>緊急通報（110番）</h4>
+<p>事件や事故が起きて、すぐに警察に来てほしいときに電話します。</p>
+            </div>
+            <span class="contact-number">110</span>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <!-- フッター -->
+<footer class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-main">
+
+            <!-- サイト紹介 -->
+            <div class="footer-about">
+                <!-- フッターのロゴ -->
+<img src="images/logo.png"
+     alt="スマホやさしくナビ"
+     class="footer-logo">
+                <p>スマホの使い方を、やさしく、わかりやすく。</p>
+                <p>自分のペースで、少しずつ学んでいきましょう。</p>
+            </div>
+
+            <!-- ページ案内 -->
+            <div class="footer-nav">
+                <h2>ページ案内</h2>
+                <ul>
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="basic.html">基本操作</a></li>
+                    <li><a href="line.html">LINEの使い方</a></li>
+                    <li><a href="internet.html">インターネット</a></li>
+                    <li><a href="safety.html">安全対策</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- ご利用にあたっての注意事項 -->
+        <p class="footer-note">
+            ※ スマートフォンの機種やバージョンによって、
+            画面や操作方法が異なる場合があります。
+        </p>
+
+        <!-- コピーライト -->
+        <div class="footer-bottom">
+            <p>© 2026 スマホやさしくナビ</p>
+            <p>はじめての方にも、安心して学べるサイト</p>
+        </div>
+
+    </div>
+</footer>
+<!-- ページトップへ戻るボタン -->
+<button id="back-to-top" type="button" aria-label="ページの先頭へ戻る">
+    <span aria-hidden="true">↑</span>
+    <span class="back-to-top-text">TOP</span>
+</button>
+</body>
+</html>
