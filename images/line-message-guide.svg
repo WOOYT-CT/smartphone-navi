@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 325">
+  <rect width="480" height="325" rx="24" fill="#dcebf5"/>
+  <text x="240" y="43" text-anchor="middle" font-family="sans-serif" font-size="23" fill="#20342b">メッセージを入力</text>
+  <path d="M240 67v40m-10-11 10 11 10-11" fill="none" stroke="#9f241e" stroke-width="5" stroke-linecap="round"/>
+  <rect x="24" y="118" width="432" height="59" rx="20" fill="#fff"/>
+  <rect x="51" y="122" width="335" height="51" rx="22" fill="#fff5ed" stroke="#b32b24" stroke-width="4"/>
+  <text x="72" y="156" font-family="sans-serif" font-size="26" fill="#20342b">こんにちは</text>
+  <path d="M398 134l26 14-26 14 7-14z" fill="#1760a6"/>
+  <rect x="24" y="190" width="432" height="105" rx="14" fill="#e8eef1"/>
+  <path d="M45 211h390m-379 28h366m-341 28h322" stroke="#fff" stroke-width="17" stroke-linecap="round" stroke-dasharray="22 12"/>
+  <text x="240" y="315" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#20342b">操作イメージ</text>
+</svg>

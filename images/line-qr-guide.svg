@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360">
+  <rect width="480" height="360" rx="24" fill="#263e35"/>
+  <path d="M120 114v-38h38m164 0h38v38m0 132v38h-38m-164 0h-38v-38" fill="none" stroke="#9ee1a5" stroke-width="9" stroke-linecap="round"/>
+  <rect x="170" y="112" width="140" height="140" rx="12" fill="#fff"/>
+  <path d="M185 127h32v32h-32zm79 0h32v32h-32zm-79 79h32v32h-32z" fill="none" stroke="#20342b" stroke-width="6"/>
+  <path d="M194 136h14v14h-14zm79 0h14v14h-14zm-79 79h14v14h-14zm36-76h13v27h-13zm19 32h39v13h-39zm-24 24h13v32h-13zm24 7h38v24h-38z" fill="#20342b"/>
+  <text x="240" y="43" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#fff">枠の中に合わせる</text>
+  <text x="240" y="328" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#fff">学習用の見本（読み取り不可）</text>
+</svg>
