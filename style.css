@@ -127,13 +127,6 @@ header {
 }
 
 
-/* footer */
-footer {
-    background-color: #315847;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
 
 /* 見出しと本文サイズ */
 h1 {
@@ -1127,117 +1120,188 @@ p,nav a,.font-controls span {
     .feature-card { padding: 28px 20px; }
 }
 
-
-/* =========================
+/* ========================================
    フッター
-========================= */
+======================================== */
 
 .site-footer {
-    background-color: #294c40;
+    background-color: #25483d;
     color: #ffffff;
-    padding: 12px 20px 8px;
-}
-
-.footer-container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-/* フッター上部：サイト紹介とページ案内 */
-.footer-main {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 30px;
-    margin-bottom: 6px;
-}
-
-.footer-nav h2 {
-    margin-bottom: 5px;
-}
-
-.footer-about p {
-    line-height: 1.4;
-    margin-bottom: 2px;
-}
-
-/* ページ案内を2列に配置する */
-.footer-nav ul {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 12px;
-    row-gap: 4px;
-}
-
-/* リンク間の余白を調整する */
-.footer-nav li {
-    margin-bottom: 0;
-}
-
-.footer-nav a {
-    color: #e0ebe5;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.footer-nav a:hover {
-    color: #f4b66a;
-    text-decoration: underline;
-}
-
-.footer-nav a:focus-visible {
-    outline: 2px solid #f4b66a;
-    outline-offset: 4px;
-}
-
-/* ご利用にあたっての注意事項 */
-.footer-note {
-    margin-bottom: 6px;
-    line-height: 1.5;
-}
-
-/* フッター下部：コピーライト */
-.footer-bottom {
-    border-top: 1px solid #68877a;
-    padding-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.footer-bottom p {
-    color: #e0ebe5;
-    font-size: 0.85rem;
-}
-
-/* スマートフォン表示への対応 */
-@media (max-width: 700px) {
-    .footer-main {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        gap: 8px;
-    }
-}
-
-/* フッター内の文字を左揃えにする */
-.footer-about,
-.footer-nav {
+    padding: 24px 30px 20px;
     text-align: left;
 }
 
-/* フッターのロゴ */
+/* フッター全体 */
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* 左右2カラムの配置 */
+.footer-main {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: start;
+    gap: 100px;
+    padding-bottom: 28px;
+}
+
+/* サイト紹介 */
+.footer-about {
+    min-width: 0;
+}
+
+/* ロゴ */
 .footer-logo {
     display: block;
-    width: 270px;
+    width: 220px;
     max-width: 100%;
     height: auto;
-    margin-bottom: 8px;
+    margin: -15px 0 -5px;
 }
+
+/* 卒業制作の紹介 */
+.footer-project {
+    width: 100%;
+    max-width: 560px;
+    text-align: left;
+}
+
+.footer-project p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    font-weight: normal;
+    margin: 0;
+    text-wrap: pretty;
+}
+
+/* 段落の間隔 */
+.footer-project p + p {
+    margin-top: 8px;
+}
+
+/* ページ案内 */
+.footer-nav {
+    min-width: 0;
+    text-align: left;
+}
+
+.footer-nav h2 {
+    font-size: 1.2rem;
+    margin: 0 0 12px;
+    color: #ffffff;
+}
+
+/* ナビゲーションの配置 */
+.footer-nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px 20px;
+    list-style-position: inside;
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    list-style: none;
+}
+
+/* ナビゲーションのマーク */
+.footer-nav li::before {
+    content: "•";
+    margin-right: 6px;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+/* キーボード操作時 */
+.footer-nav a:focus-visible {
+    outline: 2px solid #f39a3c;
+    outline-offset: 4px;
+}
+
+/* フッター下部 */
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 22px;
+    text-align: center;
+}
+
+/* 注意事項 */
+.footer-bottom .footer-note {
+    font-size: 0.85rem;
+    line-height: 1.7;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* コピーライト */
+.footer-copyright {
+    font-size: 0.85rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/* ========================================
+   フッター・スマートフォン表示
+======================================== */
+
+@media screen and (max-width: 768px) {
+
+    .site-footer {
+        padding: 20px 20px 18px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding-bottom: 20px;
+    }
+
+    .footer-logo {
+        width: 200px;
+    }
+
+    .footer-nav h2 {
+        margin-bottom: 10px;
+    }
+
+    .footer-nav ul {
+        gap: 6px 12px;
+    }
+
+    .footer-bottom {
+        padding-top: 16px;
+        gap: 12px;
+    }
+}
+
+/* 画面幅が狭い場合 */
+@media screen and (max-width: 380px) {
+
+    .footer-nav ul {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* =========================
    ページトップへ戻るボタン
 ========================= */
